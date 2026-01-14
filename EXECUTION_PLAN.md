@@ -180,15 +180,15 @@ Human must complete before agents begin:
 ### Phase 1 Checkpoint
 
 **Automated:**
-- [ ] All tests pass
-- [ ] No JavaScript errors in browser console
+- [x] All tests pass
+- [x] No JavaScript errors in browser console
 
 **Manual Verification:**
-- [ ] Calculator displays in browser
-- [ ] Click 2 + 3 = shows 5
-- [ ] Click 10 ÷ 0 = shows Error
-- [ ] AC clears everything, C clears current entry only
-- [ ] Chained operation: 2 + 3 + 4 = shows 9
+- [x] Calculator displays in browser
+- [x] Click 2 + 3 = shows 5
+- [x] Click 10 ÷ 0 = shows Error
+- [x] AC clears everything, C clears current entry only
+- [x] Chained operation: 2 + 3 + 4 = shows 9
 
 ---
 
@@ -200,7 +200,7 @@ Human must complete before agents begin:
 
 Human must complete before agents begin:
 
-- [ ] Phase 1 checkpoint approved
+- [x] Phase 1 checkpoint approved
 
 ---
 

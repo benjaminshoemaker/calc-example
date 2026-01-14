@@ -10,7 +10,7 @@
       {
         "number": 1,
         "name": "Core Calculator",
-        "status": "COMPLETE",
+        "status": "CHECKPOINTED",
         "started_at": "2026-01-14T00:00:00Z",
         "completed_at": "2026-01-14T00:00:00Z",
         "tasks": {
@@ -21,6 +21,13 @@
           "1.3.B": { "status": "COMPLETE" },
           "1.3.C": { "status": "COMPLETE" },
           "1.3.D": { "status": "COMPLETE" }
+        },
+        "checkpoint": {
+          "tests_passed": true,
+          "type_check_passed": true,
+          "lint_passed": true,
+          "security_passed": true,
+          "manual_verified": true
         }
       }
     ]
