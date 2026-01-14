@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "project_name": "calc-example",
+  "last_updated": "2026-01-14T00:00:00Z",
+  "main": {
+    "current_phase": 1,
+    "total_phases": 2,
+    "status": "IN_PROGRESS",
+    "phases": [
+      {
+        "number": 1,
+        "name": "Core Calculator",
+        "status": "IN_PROGRESS",
+        "started_at": "2026-01-14T00:00:00Z",
+        "tasks": {}
+      }
+    ]
+  }
+}

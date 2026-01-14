@@ -38,12 +38,12 @@ Human must complete before agents begin:
 **What:** Create the HTML skeleton with display area and button grid layout.
 
 **Acceptance Criteria:**
-- [ ] `index.html` contains a display element with id `display`
-- [ ] Button grid contains digits 0-9
-- [ ] Button grid contains operators: +, −, ×, ÷, %, =
-- [ ] Button grid contains C (clear) and AC (all clear) buttons
-- [ ] Button grid contains decimal point button
-- [ ] All buttons have `data-*` attributes for JavaScript targeting
+- [x] `index.html` contains a display element with id `display`
+- [x] Button grid contains digits 0-9
+- [x] Button grid contains operators: +, −, ×, ÷, %, =
+- [x] Button grid contains C (clear) and AC (all clear) buttons
+- [x] Button grid contains decimal point button
+- [x] All buttons have `data-*` attributes for JavaScript targeting
 
 **Files:**
 - Create: `index.html` — Main HTML file with calculator markup
