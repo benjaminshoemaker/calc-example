@@ -26,8 +26,8 @@ Phase 2: Input & Polish
 
 Human must complete before agents begin:
 
-- [ ] Create project directory structure
-- [ ] Initialize git repository (`git init`)
+- [x] Create project directory structure
+- [x] Initialize git repository (`git init`)
 
 ---
 
