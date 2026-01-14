@@ -22,6 +22,12 @@ function allClear() {
   updateDisplay();
 }
 
+// Clear current entry (preserves operator and firstOperand)
+function clear() {
+  state.displayValue = '0';
+  updateDisplay();
+}
+
 // Input a digit
 function inputDigit(digit) {
   if (state.waitingForSecondOperand) {
@@ -67,6 +73,9 @@ document.querySelector('.button-grid').addEventListener('click', (e) => {
       break;
     case 'all-clear':
       allClear();
+      break;
+    case 'clear':
+      clear();
       break;
   }
 });

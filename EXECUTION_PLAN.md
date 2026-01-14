@@ -143,9 +143,9 @@ Human must complete before agents begin:
 **What:** Implement C (clear entry) and AC (all clear) functionality.
 
 **Acceptance Criteria:**
-- [ ] `clear()` resets displayValue to "0" but preserves operator and firstOperand
-- [ ] `allClear()` resets entire calculator state (already done in 1.2.A, wire to button)
-- [ ] Tests verify clear preserves pending operation, allClear resets everything
+- [x] `clear()` resets displayValue to "0" but preserves operator and firstOperand
+- [x] `allClear()` resets entire calculator state (already done in 1.2.A, wire to button)
+- [x] Tests verify clear preserves pending operation, allClear resets everything
 
 **Files:**
 - Modify: `calculator.js` — Add clear function, wire AC/C buttons
