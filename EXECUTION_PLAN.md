@@ -161,12 +161,12 @@ Human must complete before agents begin:
 **What:** Implement operator handling and calculation.
 
 **Acceptance Criteria:**
-- [ ] `inputOperator(op)` stores firstOperand and operator, sets waitingForSecondOperand
-- [ ] `calculate()` performs arithmetic: add, subtract, multiply, divide
-- [ ] Chained operations work: "2 + 3 +" calculates intermediate result (5)
-- [ ] Division by zero displays "Error"
-- [ ] Percentage converts displayValue to decimal (e.g., 50 → 0.5)
-- [ ] Tests verify all four operations, chaining, division by zero, percentage
+- [x] `inputOperator(op)` stores firstOperand and operator, sets waitingForSecondOperand
+- [x] `calculate()` performs arithmetic: add, subtract, multiply, divide
+- [x] Chained operations work: "2 + 3 +" calculates intermediate result (5)
+- [x] Division by zero displays "Error"
+- [x] Percentage converts displayValue to decimal (e.g., 50 → 0.5)
+- [x] Tests verify all four operations, chaining, division by zero, percentage
 
 **Files:**
 - Modify: `calculator.js` — Add inputOperator, calculate, handlePercent functions

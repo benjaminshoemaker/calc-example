@@ -57,6 +57,67 @@ function inputDecimal() {
   updateDisplay();
 }
 
+// Handle operator input
+function inputOperator(operator) {
+  const inputValue = parseFloat(state.displayValue);
+
+  // If we already have an operator and are not waiting, calculate first (chaining)
+  if (state.operator && !state.waitingForSecondOperand) {
+    calculate();
+  }
+
+  state.firstOperand = parseFloat(state.displayValue);
+  state.operator = operator;
+  state.waitingForSecondOperand = true;
+}
+
+// Perform calculation
+function calculate() {
+  if (state.operator === null || state.waitingForSecondOperand) return;
+
+  const first = state.firstOperand;
+  const second = parseFloat(state.displayValue);
+  let result;
+
+  switch (state.operator) {
+    case '+':
+      result = first + second;
+      break;
+    case '-':
+      result = first - second;
+      break;
+    case '*':
+      result = first * second;
+      break;
+    case '/':
+      if (second === 0) {
+        state.displayValue = 'Error';
+        state.firstOperand = null;
+        state.operator = null;
+        state.waitingForSecondOperand = false;
+        updateDisplay();
+        return;
+      }
+      result = first / second;
+      break;
+    default:
+      return;
+  }
+
+  state.displayValue = String(result);
+  state.firstOperand = result;
+  state.operator = null;
+  state.waitingForSecondOperand = false;
+  updateDisplay();
+}
+
+// Handle percentage
+function handlePercent() {
+  const value = parseFloat(state.displayValue);
+  state.displayValue = String(value / 100);
+  updateDisplay();
+}
+
 // Event delegation for button clicks
 document.querySelector('.button-grid').addEventListener('click', (e) => {
   const button = e.target;
@@ -76,6 +137,15 @@ document.querySelector('.button-grid').addEventListener('click', (e) => {
       break;
     case 'clear':
       clear();
+      break;
+    case 'operator':
+      inputOperator(button.dataset.operator);
+      break;
+    case 'percent':
+      handlePercent();
+      break;
+    case 'equals':
+      calculate();
       break;
   }
 });
