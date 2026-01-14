@@ -34,6 +34,23 @@ function inputDigit(digit) {
   updateDisplay();
 }
 
+// Input decimal point
+function inputDecimal() {
+  // After operator, start new number with "0."
+  if (state.waitingForSecondOperand) {
+    state.displayValue = '0.';
+    state.waitingForSecondOperand = false;
+    updateDisplay();
+    return;
+  }
+
+  // Ignore if already has decimal
+  if (state.displayValue.includes('.')) return;
+
+  state.displayValue += '.';
+  updateDisplay();
+}
+
 // Event delegation for button clicks
 document.querySelector('.button-grid').addEventListener('click', (e) => {
   const button = e.target;
@@ -44,6 +61,9 @@ document.querySelector('.button-grid').addEventListener('click', (e) => {
   switch (action) {
     case 'digit':
       inputDigit(button.dataset.digit);
+      break;
+    case 'decimal':
+      inputDecimal();
       break;
     case 'all-clear':
       allClear();

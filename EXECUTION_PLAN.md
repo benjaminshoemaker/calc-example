@@ -124,10 +124,10 @@ Human must complete before agents begin:
 **What:** Handle decimal point with duplicate prevention.
 
 **Acceptance Criteria:**
-- [ ] `inputDecimal()` adds "." to displayValue
-- [ ] Multiple decimal presses are ignored (only one "." allowed)
-- [ ] After operator, decimal starts new number as "0."
-- [ ] Tests verify: "5" + "." = "5.", "5.2" + "." = "5.2" (ignored)
+- [x] `inputDecimal()` adds "." to displayValue
+- [x] Multiple decimal presses are ignored (only one "." allowed)
+- [x] After operator, decimal starts new number as "0."
+- [x] Tests verify: "5" + "." = "5.", "5.2" + "." = "5.2" (ignored)
 
 **Files:**
 - Modify: `calculator.js` — Add inputDecimal function
