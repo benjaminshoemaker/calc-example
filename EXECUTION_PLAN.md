@@ -82,11 +82,11 @@ Human must complete before agents begin:
 **What:** Create the state object and display update function.
 
 **Acceptance Criteria:**
-- [ ] State object contains: `displayValue`, `firstOperand`, `operator`, `waitingForSecondOperand`
-- [ ] Initial state sets `displayValue` to "0", others to null/false
-- [ ] `updateDisplay()` function updates the display element with current `displayValue`
-- [ ] `allClear()` resets state to initial values
-- [ ] Tests verify initial state values and allClear behavior
+- [x] State object contains: `displayValue`, `firstOperand`, `operator`, `waitingForSecondOperand`
+- [x] Initial state sets `displayValue` to "0", others to null/false
+- [x] `updateDisplay()` function updates the display element with current `displayValue`
+- [x] `allClear()` resets state to initial values
+- [x] Tests verify initial state values and allClear behavior
 
 **Files:**
 - Create: `calculator.js` — Calculator logic module
