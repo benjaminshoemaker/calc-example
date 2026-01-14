@@ -59,12 +59,12 @@ Human must complete before agents begin:
 **What:** Style the calculator with responsive CSS for desktop and mobile.
 
 **Acceptance Criteria:**
-- [ ] Calculator is centered on the page
-- [ ] Display area shows current value with right-aligned text
-- [ ] Button grid uses CSS Grid with 4 columns
-- [ ] All buttons have minimum 44×44px touch targets
-- [ ] Layout adapts to mobile (full-width) and desktop (max-width container)
-- [ ] Buttons have visible hover/active states
+- [x] Calculator is centered on the page
+- [x] Display area shows current value with right-aligned text
+- [x] Button grid uses CSS Grid with 4 columns
+- [x] All buttons have minimum 44×44px touch targets
+- [x] Layout adapts to mobile (full-width) and desktop (max-width container)
+- [x] Buttons have visible hover/active states
 
 **Files:**
 - Create: `styles.css` — All calculator styling
