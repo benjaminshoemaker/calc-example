@@ -22,5 +22,34 @@ function allClear() {
   updateDisplay();
 }
 
+// Input a digit
+function inputDigit(digit) {
+  if (state.waitingForSecondOperand) {
+    state.displayValue = digit;
+    state.waitingForSecondOperand = false;
+  } else {
+    // Replace leading zero, unless it's "0."
+    state.displayValue = state.displayValue === '0' ? digit : state.displayValue + digit;
+  }
+  updateDisplay();
+}
+
+// Event delegation for button clicks
+document.querySelector('.button-grid').addEventListener('click', (e) => {
+  const button = e.target;
+  if (!button.matches('button')) return;
+
+  const action = button.dataset.action;
+
+  switch (action) {
+    case 'digit':
+      inputDigit(button.dataset.digit);
+      break;
+    case 'all-clear':
+      allClear();
+      break;
+  }
+});
+
 // Initialize display on load
 updateDisplay();

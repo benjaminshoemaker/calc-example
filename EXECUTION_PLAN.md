@@ -105,10 +105,10 @@ Human must complete before agents begin:
 **What:** Handle digit button clicks and update display.
 
 **Acceptance Criteria:**
-- [ ] `inputDigit(digit)` appends digit to displayValue
-- [ ] Leading zero is replaced (except for "0.")
-- [ ] After operator pressed, new digit replaces display (waitingForSecondOperand)
-- [ ] Tests verify: "0" + "5" = "5", "12" + "3" = "123", operator + "7" starts fresh
+- [x] `inputDigit(digit)` appends digit to displayValue
+- [x] Leading zero is replaced (except for "0.")
+- [x] After operator pressed, new digit replaces display (waitingForSecondOperand)
+- [x] Tests verify: "0" + "5" = "5", "12" + "3" = "123", operator + "7" starts fresh
 
 **Files:**
 - Modify: `calculator.js` — Add inputDigit function
